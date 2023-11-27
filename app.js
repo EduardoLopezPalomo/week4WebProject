@@ -33,7 +33,7 @@ let recipes = {
     pizza: {
       name: 'Pizza',
       instructions: [
-        'Preheat oven to 475°F (245°C).',
+        'Put it in oven for 30 min',
         'Spread dough on a pizza pan.',
         'Add sauce, cheese, and desired toppings.',
         'Bake in preheated oven for 12-15 minutes.'
@@ -48,7 +48,7 @@ let recipes = {
     pasta: {
       name: 'Pasta',
       instructions: [
-        'Boil water in a large pot.',
+        'Put it in oven for 30 min',
         'Add pasta and cook until al dente.',
         'Drain the pasta and return it to the pot.',
         'Add your favorite sauce and toss until coated.'
@@ -63,7 +63,7 @@ let recipes = {
     tikka_masala: {
       name: 'Tikka_Masala',
       instructions: [
-        'Marinate chicken in yogurt and spices.',
+        'Put it in oven for 30 min',
         'Cook marinated chicken until browned and set aside.',
         'Prepare the gravy by sautéing onions, adding spices, and pureed tomatoes.',
         'Combine cooked chicken with the gravy and simmer with cream.',
@@ -79,7 +79,7 @@ let recipes = {
     casserole:{
         name: 'Casserole',
         instructions: [
-          'Marinate chicken in yogurt and spices.',
+          'Put it in oven for 30 min',
           'Cook marinated chicken until browned and set aside.',
           'Prepare the gravy by sautéing onions, adding spices, and pureed tomatoes.',
           'Combine cooked chicken with the gravy and simmer with cream.',
@@ -95,7 +95,7 @@ let recipes = {
     lasagna:{
         name: 'Lasagna',
         instructions: [
-          'Marinate chicken in yogurt and spices.',
+          'Put it in oven for 30 min',
           'Cook marinated chicken until browned and set aside.',
           'Prepare the gravy by sautéing onions, adding spices, and pureed tomatoes.',
           'Combine cooked chicken with the gravy and simmer with cream.',
