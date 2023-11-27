@@ -75,7 +75,7 @@ let recipes = {
       ]
     },
     casserole:{
-        name: 'casserole',
+        name: 'Casserole',
         instructions: [
           'Marinate chicken in yogurt and spices.',
           'Cook marinated chicken until browned and set aside.',
