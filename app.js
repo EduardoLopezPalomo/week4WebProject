@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 app.get('/', async (req, res) => {
   try {
-    const food = 'tikka_masala'; 
+    const food = 'pizza'; 
     const recipeResponse = await axios.get(`http://localhost:3000/recipe/${food}`);
 
     const recipe = recipeResponse.data;
@@ -59,7 +59,7 @@ let recipes = {
       ]
     },
     tikka_masala: {
-      name: 'Chicken Tikka Masala',
+      name: 'Tikka_Masala',
       instructions: [
         'Marinate chicken in yogurt and spices.',
         'Cook marinated chicken until browned and set aside.',
@@ -71,14 +71,24 @@ let recipes = {
         'Boneless chicken',
         'Plain yogurt',
         'Ginger-garlic paste',
-        'Spices (turmeric powder, red chili powder, garam masala)',
-        'Lemon juice',
-        'Onion',
-        'Tomatoes',
-        'Oil or ghee (clarified butter)',
-        'Heavy cream',
-        'Fresh coriander leaves (for garnishing)'
+        'Spices (turmeric powder, red chili powder, garam masala)'
       ]
+    },
+    casserole:{
+        name: 'casserole',
+        instructions: [
+          'Marinate chicken in yogurt and spices.',
+          'Cook marinated chicken until browned and set aside.',
+          'Prepare the gravy by sautéing onions, adding spices, and pureed tomatoes.',
+          'Combine cooked chicken with the gravy and simmer with cream.',
+          'Garnish with fresh coriander leaves and serve hot.'
+        ],
+        ingredients: [
+          'Boneless chicken',
+          'Plain yogurt',
+          'Ginger-garlic paste',
+          'Spices (turmeric powder, red chili powder, garam masala)'
+        ]
     }
   };
   
