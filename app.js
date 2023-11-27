@@ -155,12 +155,15 @@ app.post('/recipe/', (req, res) => {
   });
 
   app.post('/new_recipe', upload.array('images'), (req, res) => {
-    
-    if (!req.files || req.files.length === 0) {
-      return res.status(400).send('No images were uploaded.');
+    const images = req.files;
+
+    if (images && images.length > 0) {
+      
+      const firstImage = images[0];
+      res.send(firstImage.buffer); 
+    } else {
+      res.status(400).send('No images received.');
     }
-  
-    res.send("Hi");
   });
 
 
