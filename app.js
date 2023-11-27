@@ -71,7 +71,7 @@ let recipes = {
       ],
       ingredients: [
         'Boneless chicken',
-        'Plain yogurt',
+        'Tikka_Masala',
         'Ginger-garlic paste',
         'Spices (turmeric powder, red chili powder, garam masala)'
       ]
