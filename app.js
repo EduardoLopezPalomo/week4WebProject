@@ -90,7 +90,7 @@ let recipes = {
           'Spices (turmeric powder, red chili powder, garam masala)'
         ]
     },
-    Lasagna:{
+    lasagna:{
         name: 'Lasagna',
         instructions: [
           'Marinate chicken in yogurt and spices.',
