@@ -54,7 +54,7 @@ let recipes = {
         'Add your favorite sauce and toss until coated.'
       ],
       ingredients: [
-        'Pasta of your choice',
+        'Pasta',
         'Pasta sauce',
         'Salt (for boiling water)',
         'Optional: Parmesan cheese, fresh herbs for garnish'
