@@ -47,7 +47,7 @@ let recipes = {
       ]
     },
     pasta: {
-      name: 'Pasta',
+      name: 'Pasta', 
       instructions: [
         'Put it in oven for 30 min',
         'Meanwhile, make the sauce',
