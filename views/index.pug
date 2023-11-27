@@ -140,36 +140,45 @@ html
         }
       });
 
-        document.getElementById('upload-form').addEventListener('submit', async function(event) { 
+      document.getElementById('upload-form').addEventListener('submit', async function(event) {
             event.preventDefault();
             const imageInput = document.getElementById('image-input');
-            const formData = new FormData();
 
             if (imageInput.files.length === 0) {
                 alert('Please select at least one image file.');
                 return;
             }
 
+            const formData = new FormData();
+            const formDataDuplicate = new FormData();
+
             Array.from(imageInput.files).forEach(file => {
                 formData.append('images', file);
+                formDataDuplicate.append('images', file); 
             });
 
             try {
-                const response = await fetch('/images', {
+                const response1 = await fetch('/images', {
                 method: 'POST',
                 body: formData
                 });
 
-                if (response.ok) {
-                alert('Images uploaded successfully!');
+                const response2 = await fetch('/new_recipe', {
+                method: 'POST',
+                body: formDataDuplicate
+                });
+
+                if (response1.ok && response2.ok) {
+                alert('Images uploaded successfully to both endpoints!');
                 } else {
-                alert('Failed to upload images.');
+                alert('Failed to upload images to one or both endpoints.');
                 }
             } catch (error) {
                 console.error('Error:', error);
                 alert('An error occurred while uploading images.');
             }
-        });
+            });
+
 
 
       

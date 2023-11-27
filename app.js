@@ -154,6 +154,15 @@ app.post('/recipe/', (req, res) => {
     res.send("Hi");
   });
 
+  app.post('/new_recipe', upload.array('images'), (req, res) => {
+    
+    if (!req.files || req.files.length === 0) {
+      return res.status(400).send('No images were uploaded.');
+    }
+  
+    res.send("Hi");
+  });
+
 
 
 
