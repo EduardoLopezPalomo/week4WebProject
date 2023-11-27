@@ -145,13 +145,13 @@ app.post('/recipe/', (req, res) => {
     res.json(newRecipe);
   });
 
-  app.post('/new_recipe', upload.array('images'), (req, res) => {
+  app.post('/images', upload.array('images'), (req, res) => {
     
     if (!req.files || req.files.length === 0) {
       return res.status(400).send('No images were uploaded.');
     }
   
-    res.status(200).send('Images uploaded successfully!');
+    res.send("Hi");
   });
 
 
