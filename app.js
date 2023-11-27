@@ -102,7 +102,7 @@ let recipes = {
           'Garnish with fresh coriander leaves and serve hot.'
         ],
         ingredients: [
-          'Boneless chicken',
+          'Lasagna',
           'Plain yogurt',
           'Ginger-garlic paste',
           'Spices (turmeric powder, red chili powder, garam masala)'
