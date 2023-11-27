@@ -8,6 +8,8 @@ const upload = multer({
     dest: 'uploads/',
   });
 
+let aux = "pizza";
+
 app.set('view engine', 'pug');
 app.set('views', './views');
 
@@ -16,7 +18,7 @@ app.use(bodyParser.json());
 
 app.get('/', async (req, res) => {
   try {
-    const food = 'pizza'; 
+    const food = aux; 
     const recipeResponse = await axios.get(`http://localhost:3000/recipe/${food}`);
 
     const recipe = recipeResponse.data;
@@ -112,7 +114,7 @@ let recipes = {
 
   app.get('/recipe/:food', (req, res) => {
     const food = req.params.food.toLowerCase();
-  
+    aux = food;
     if (recipes[food]) {
       res.json({
         name: recipes[food].name,
