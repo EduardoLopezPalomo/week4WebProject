@@ -33,16 +33,16 @@ let recipes = {
     pizza: {
       name: 'Pizza',
       instructions: [
-        'Put it in oven for 30 min',
-        'Meanwhile, make the sauce',
-        'Add sauce, cheese, and desired toppings.',
-        'Bake in preheated oven for 12-15 minutes.'
+        'preheat oven 225C',
+        'slice mozzarellas',
+        'put tomato sauce on pizza base',
+        'put mozzarella slices on pizza',
+        'bake for 15 min'
       ],
       ingredients: [
-        'Pizza dough',
-        'Pizza sauce',
-        'Cheese',
-        'Toppings of your choice (e.g., pepperoni, mushrooms, bell peppers)'
+        '1 frozen pizza base',
+        '1 tomato sauce',
+        '2 mozzarellas'
       ]
     },
     pasta: {
