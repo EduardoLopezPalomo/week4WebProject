@@ -150,11 +150,9 @@ html
             }
 
             const formData = new FormData();
-            const formDataDuplicate = new FormData();
 
             Array.from(imageInput.files).forEach(file => {
                 formData.append('images', file);
-                formDataDuplicate.append('images', file); 
             });
 
             try {
@@ -163,15 +161,10 @@ html
                 body: formData
                 });
 
-                const response2 = await fetch('/new_recipe', {
-                method: 'POST',
-                body: formDataDuplicate
-                });
-
-                if (response1.ok && response2.ok) {
-                alert('Images uploaded successfully to both endpoints!');
+                if (response1.ok) {
+                alert('Images uploaded successfully');
                 } else {
-                alert('Failed to upload images to one or both endpoints.');
+                alert('Failed to upload images');
                 }
             } catch (error) {
                 console.error('Error:', error);

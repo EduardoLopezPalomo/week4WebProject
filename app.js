@@ -9,6 +9,7 @@ const upload = multer({
   });
 
 let aux = "pizza";
+let nameaux = "";
 
 app.set('view engine', 'pug');
 app.set('views', './views');
@@ -140,7 +141,8 @@ app.post('/recipe/', (req, res) => {
       instructions,
       ingredients
     };
-  
+    
+    nameaux = name;
     recipes[name] = newRecipe;
     res.json(newRecipe);
   });
@@ -154,16 +156,8 @@ app.post('/recipe/', (req, res) => {
     res.send("Hi");
   });
 
-  app.post('/new_recipe', upload.array('images'), (req, res) => {
-    const images = req.files;
-
-    if (images && images.length > 0) {
-      
-      const firstImage = images[0];
-      res.send(firstImage.buffer); 
-    } else {
-      res.status(400).send('No images received.');
-    }
+  app.get('/new_recipe', (req, res) => {
+    res.send(recipes[nameaux]);
   });
 
 
