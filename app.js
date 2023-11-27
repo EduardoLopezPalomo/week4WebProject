@@ -37,7 +37,8 @@ let recipes = {
         'slice mozzarellas',
         'put tomato sauce on pizza base',
         'put mozzarella slices on pizza',
-        'bake for 15 min'
+        'bake for 15 min',
+        'Meanwhile, make the sauce'
       ],
       ingredients: [
         '1 frozen pizza base',
