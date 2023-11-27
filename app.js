@@ -89,6 +89,22 @@ let recipes = {
           'Ginger-garlic paste',
           'Spices (turmeric powder, red chili powder, garam masala)'
         ]
+    },
+    Lasagna:{
+        name: 'Lasagna',
+        instructions: [
+          'Marinate chicken in yogurt and spices.',
+          'Cook marinated chicken until browned and set aside.',
+          'Prepare the gravy by sautéing onions, adding spices, and pureed tomatoes.',
+          'Combine cooked chicken with the gravy and simmer with cream.',
+          'Garnish with fresh coriander leaves and serve hot.'
+        ],
+        ingredients: [
+          'Boneless chicken',
+          'Plain yogurt',
+          'Ginger-garlic paste',
+          'Spices (turmeric powder, red chili powder, garam masala)'
+        ]
     }
   };
   
