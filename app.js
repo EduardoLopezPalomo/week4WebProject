@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.get('/', async (req, res) => {
   try {
     const food = aux; 
-    const recipeResponse = await axios.get(`http://localhost:3000/recipe/${food}`);
+    const recipeResponse = await axios.get(`http://localhost:3000/recipe/${food}`); 
 
     const recipe = recipeResponse.data;
 
